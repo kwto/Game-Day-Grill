@@ -1,5 +1,4 @@
 import type { Config } from 'tailwindcss'
-
 // @ts-ignore
 const colors: Config = {
   colors: {
@@ -69,7 +68,6 @@ const colors: Config = {
       950: 'var(--accent-950)',
     },
   },
-
   plugins: [],
 }
 export default colors

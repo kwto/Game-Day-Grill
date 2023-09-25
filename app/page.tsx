@@ -1,7 +1,9 @@
 export default function Home() {
-  return (
-    <main>
-      <h1>Main</h1>
-    </main>
-  )
+    return (
+        <main>
+            <div className="bg-black">
+                <h1 className="text-white">This is the home page</h1>
+            </div>
+        </main>
+    );
 }
