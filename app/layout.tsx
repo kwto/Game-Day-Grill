@@ -1,13 +1,5 @@
-import './globals.css'
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
-
-export const metadata: Metadata = {
-  title: 'Game Day Grill',
-  description: 'Game Day Grill for BPA',
-}
+import React from 'react'
+import { Html, Head, Body } from 'next/document'
 
 export default function RootLayout({
   children,
@@ -15,8 +7,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+    <Html lang="en">
+      <Head>
+        <title>Game Day Grill</title>
+        <meta name="description" content="Game Day Grill for BPA" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+      </Head>
+      <Body>{children}</Body>
+    </Html>
   )
 }
